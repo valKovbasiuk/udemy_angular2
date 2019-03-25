@@ -1,0 +1,10 @@
+<label>
+    <input type="text" [(ngModel)]="username" (input)=getUserName($event)>
+</label>
+
+<button class="btn btn-primary" [disabled]="checkIfEmpty()" (click)="clearInput($event)">Clear user</button>
+
+<p>{{username}}</p>
+
+<app-server></app-server>
+<app-server></app-server>
